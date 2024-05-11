@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="./stylesheets/histogram.css">
+</head>
+<body>
+   <h1>Histogram Generator</h1>
+   <div class="all">
+    <div class="div-p">
+        <h2 class="red"><b>Lower bounds</b></h2><br>
+        <p class="word-shift"><b>Max</b></p><br>
+        <p class="word-shift"><b>A+</b></p><br>
+        <p class="word-shift"><b>A</b></p><br>
+        <p class="word-shift"><b>A-</b></p><br>
+        <p class="word-shift"><b>B+</b></p><br>
+        <p class="word-shift"><b>B</b></p><br>
+        <p class="word-shift"><b>B-</b></p><br>
+        <p class="word-shift"><b>C+</b></p><br>
+        <p class="word-shift"><b>C</b></p><br>
+        <p class="word-shift"><b>C-</b></p><br>
+        <p class="word-shift"><b>D</b></p><br>
+        <p class="word-shift"><b>F</b></p><br>
+
+        <form id="RangeInput" action="" method="post" class="space1" oninput="range()">
+            <input id="max" class="div-input" type="number" name="max" value="100.00"><br>
+            <input id="A+" class="div-input" type="number" name="A+" value="95.00"><br>
+            <input id="A" class="div-input" type="number" name="A" value="90.00"><br>
+            <input id="A-" class="div-input" type="number" name="A-" value="85.00"><br>
+            <input id="B+" class="div-input" type="number" name="B+" value="80.00"><br>
+            <input id="B" class="div-input" type="number" name="B" value="75.00"><br>
+            <input id="B-" class="div-input" type="number" name="B-" value="70.00"><br>
+            <input id="C+" class="div-input" type="number" name="C+" value="65.00"><br>
+            <input id="C" class="div-input" type="number" name="C" value="60.00"><br>
+            <input id="C-" class="div-input" type="number" name="C-" value="55.00"><br>
+            <input id="D" class="div-input" type="number" name="D" value="50.00"><br>
+            <input id="F" class="div-input" type="number" name="F" value="0.00"><br>
+        </form>
+    </div>
+    <div class="space">
+        <h2 h2 class="red"><b>Histogram</b></h2><br>
+       <div class="grade-shift">
+           <div class="hisgrade"><b>A+</b></div> 
+            <div class="histogramOutPut"><b id="o1"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>A</b></div>
+            <div class="histogramOutPut"><b id="o2"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>A-</b></div>
+            <div class="histogramOutPut"><b id="o3"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>B+</b></div>
+            <div class="histogramOutPut"><b id="o4"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>B</b></div>
+            <div class="histogramOutPut"><b id="o5"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>B-</b></div>
+            <div class="histogramOutPut"><b id="o6"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>C+</b></div>
+            <div class="histogramOutPut"><b id="o7"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>C</b></div>
+            <div class="histogramOutPut"><b id="o8"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>C-</b></div>
+            <div class="histogramOutPut"><b id="o9"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>D</b></div>
+            <div class="histogramOutPut"><b id="o10"></b></div>
+       </div>
+       <div class="grade-shift">
+            <div class="hisgrade"><b>F</b></div>
+            <div class="histogramOutPut"><b id="o11"></b></div>
+       </div>
+       
+    </div>
+    <div class="grade-space">
+        <form id="myForm">
+            <div class="grade-box" id="NewGrade" type="number"><b>New Grades:</b>
+            <input type="number" id="marks" name="marks">
+            <input id="Tsubmit" type="submit" name="submit" value="SUBMIT!!!">
+        </div>
+        </form>
+    <script type="text/javascript" src="./calculate.js">
+    </script>
+   </div>
+</body>
+</html>

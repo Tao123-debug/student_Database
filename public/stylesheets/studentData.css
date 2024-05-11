@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    border: 1px solid;
+  }
+  
+  th {
+    height: 70px;
+    border: 1px solid;
+  }
+  td {
+    height: 70px;
+    font-size: 20px;
+    text-align:center;
+    border: 1px solid;
+  }
+  input[type=text] {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  input[type=number] {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  select {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    padding: 15px 25px;
+    margin: 10px 0;
+  }
+  .center{
+    text-align:center;
+  }

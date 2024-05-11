@@ -1,0 +1,21 @@
+input[type=text] {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  input[type=number] {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    padding: 15px 25px;
+    margin: 10px 0;
+  }
+  select {
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  

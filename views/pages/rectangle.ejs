@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/studentData.css">
+</head>
+<body>
+    <h1>Student Information</h1>
+    <div>
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Weight</th>
+          <th>Height</th>
+          <th>Hair_Color</th>
+          <th>GPA</th>  
+        </tr>
+        <% rows.forEach(function(r) { %>
+          <tr>
+            <td><%= r.id %></td>
+            <td><%= r.name %></td>
+            <td><%= r.weight %></td>
+            <td><%= r.height %></td>
+            <td><%= r.hair_color %></td>
+            <td><%= r.gpa %></td>
+          </tr> 
+        
+      </table><br>
+      <div>
+        <form action="/editstudent/<%= r.id %>" method="post">
+          <label>Name</label>
+          <input type="text" id="fname" name="student_name1" placeholder="Student name" value="<%= r.name %>" required>
+          <label>Weight</label>
+          <input type="number" id="fweight" name="student_weight1" placeholder="Student Weight" value="<%= r.weight %>" required>
+          <label>Height</label>
+          <input type="number" id="fheight" name="student_height1" placeholder="Student height" value="<%= r.height %>" required>
+          <label>Hair Color</label>
+          <select id="fHcolor" name="student_hair_color1" placeholder="Student hair color" value="<%= r.hair_color %>" required>
+              <option class="red">Red</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Yellow</option>
+              <option>Pink</option>
+              <option>Green</option>
+          </select>
+          <label>GPA</label>
+          <input type="number" id="fgpa" name="student_gpa1" placeholder="Student GPA" value="<%= r.gpa %>" required>
+          <input type="submit" name="sub" value="Update">
+        </form>
+    </div><br>
+
+    <div class="center" style="height: <%= r.height %>px; width: <%= r.weight %>px; border: solid 2px; border-color: <%= r.hair_color %>">
+        <label><%= r.name %></label>
+    </div>
+    <% }); %>
+</div><br>
+<form>
+    <input type="button" value="Previous Page" onclick="history.back()">
+   </form>
+</body>
+</html>

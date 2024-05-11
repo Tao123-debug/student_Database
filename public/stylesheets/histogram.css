@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+.red{
+    color: rgb(180, 12, 12);
+}
+.all{
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div-p hist"
+    "div-p grade-space";
+    grid-gap: 1rem;
+}
+.space{
+    padding: 10px 30px;
+    grid-area: hist;
+    background-color: rgba(233,239,241,255);
+    max-height: 500px;
+}
+.div-p{
+    padding: 10px 30px;
+    grid-area: div-p;
+    background-color: rgba(233,239,241,255);
+    max-height: 850px;
+}
+
+.div-input{
+    padding: 6.5px 12px;
+    width: 60px;
+    margin: 14.5px;
+}
+.space1{
+    position: absolute;
+    top: 165px;
+    left: 350px;
+}
+.word-shift{
+    margin: 12.5px 35px;
+}
+.grade-space{
+    padding: 10px 30px;
+    grid-area: grade-space;
+   background-color: rgba(233,239,241,255);
+   min-height: 300px;
+   
+}
+.grade-box{
+    padding: 10px;
+}
+.histogram{
+    margin: 15px 300px;
+    position: absolute;
+    top: 160px;
+    left: 1000px;
+}
+.person{
+    justify-content: space-between;
+}
+.grade-shift{
+    display:flex;
+    width: 500px;
+    margin-bottom: 16px;
+}
+.hisgrade{
+    flex: 1;
+}
+.histogramOutPut{
+    flex: 1;
+}

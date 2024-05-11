@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/studentData.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Database Results</h2>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Hair Color</th>
+        <th>Delete</th>
+      </tr>
+      <% rows.forEach(function(r) { %>
+        <tr>
+          <td><%= r.id %></td>
+          <td><a href="/<%= r.name %>"><%= r.name %></a></td>
+          <td><%= r.hair_color %></td>
+          <td><a href="/detele/<%= r.id %>">Delete</a></td>
+        </tr> 
+        <% }); %>
+    </table>
+    <form action="/addpage" method="get">
+      <input type="submit" name="sub" value="Add Student">
+    </form>
+  
+    </div>
+</body>
+</html>
+
